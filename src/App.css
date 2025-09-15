@@ -1,42 +1,119 @@
 #root {
-  max-width: 1280px;
+  min-width: fit-content;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.work-sans {
+  font-family: 'Work Sans', sans-serif;
+}
+      
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.hover\:grow {
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.hover\:grow:hover {
+  transform: scale(1.02);
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
   text-align: center;
+  z-index: 10;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet  {
+  color: #000;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar {
+  transition: 0.4s;
+  height: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#companyname {
+  transition: 0.5s;
+  height: 4rem;
 }
 
-.card {
-  padding: 2em;
+#bakonylogo {
+  transition: 0.4s;
+  height: 4.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+#ordertable {
+  max-height: 32rem;
+}
+
+#navbar a.active {
+  color: #6F8625;
+  text-shadow: 1px 1px #6F8625;
+}
+
+#adminnavbar a.active {
+  color: white;
+  font-weight: bold;
+}
+
+#processbar {
+  height: 3px;
+}
+
+.group:hover .group-hover\:block {
+  display: list-item !important;
+}
+
+#overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: white;
+  background: rgba(255, 255, 255, 0.9); /* White see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  color: rgb(170, 172, 175);
+  font-size:large;
+  padding: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+#postoverlay {
+  position: absolute; 
+  bottom: 0; 
+  background: white;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  z-index: 10;
 }
