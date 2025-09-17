@@ -6,20 +6,19 @@ import ItemPagination from "./ItemPagination";
 type P = {
   items: Product[];
   categoryFilter: Category | "Összes";
-  availableOnly: boolean;
   sort: "abc" | "priceup" | "pricedown";
 };
 
 const PAGE_SIZE = 12;
 
-export default function ItemGrid({ items, categoryFilter, availableOnly, sort }: P) {
+export default function ItemGrid({ items, categoryFilter, sort }: P) {
   const [page, setPage] = useState(0);
 
   const filteredSorted = useMemo(() => {
     let arr = items.slice();
 
     if (categoryFilter !== "Összes") arr = arr.filter(p => p.category === categoryFilter);
-    if (availableOnly) arr = arr.filter(p => p.available);
+    //if (availableOnly) arr = arr.filter(p => p.available);
 
     arr.sort((a, b) => {
       if (sort === "abc") return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
@@ -28,10 +27,10 @@ export default function ItemGrid({ items, categoryFilter, availableOnly, sort }:
     });
 
     return arr;
-  }, [items, categoryFilter, availableOnly, sort]);
+  }, [items, categoryFilter, sort]);
 
   // reset page, ha változik a szűrés
-  useEffect(() => setPage(0), [categoryFilter, availableOnly, sort]);
+  useEffect(() => setPage(0), [categoryFilter, sort]);
 
   const pageCount = Math.max(1, Math.ceil(filteredSorted.length / PAGE_SIZE));
   const start = page * PAGE_SIZE;

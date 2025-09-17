@@ -79,7 +79,6 @@ export default function Items() {
           <ItemGrid
             items={products}
             categoryFilter={categoryFilter}
-            availableOnly={availableOnly}
             sort={sort}
           />
         </div>
