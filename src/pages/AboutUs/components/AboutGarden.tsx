@@ -12,13 +12,13 @@ export default function AboutItems({ bemutatokep }: { bemutatokep: string }) {
           />
 
           {/* itt már nem kell külön max-w, a felső wrapper adja; a px-4 illeszt a többi részhez */}
-          <div className="px-4 lg:px-8">
+          <div className="px-4">
             <div className="text-left">
               <h2 className="mb-6 text-xl md:text-2xl font-bold text-gray-700">
                 Fenntartható gazdálkodás
               </h2>
 
-              <ul className="mr-0 lg:mr-8 max-w-prose space-y-2 text-gray-600 list-disc list-inside text-justify">
+              <ul className="max-w-prose space-y-2 text-gray-600 list-disc list-inside text-justify">
                 <li>Alapelvünk a fenntarthatóság és a biodiverzitás megőrzése.</li>
                 <li>Minden zöldséget, gyógy- és fűszernövényt magunk termesztünk a birtokon.</li>
                 <li>Kizárólag természetes növényvédelmi és növénytáplálási megoldásokat alkalmazunk – ez egyszerre óvja a környezetet és garantálja a termékeink magas minőségét.</li>
