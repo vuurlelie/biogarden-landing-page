@@ -42,24 +42,9 @@ export default function DetailPanel({ product }: { product: Product }) {
       {/* Új rendelési tájékoztató + CTA */}
       <div className="space-y-6">
         <p className="text-gray-700 text-justify italic leading-relaxed">
-          Termékeink megrendelhetőek <span className="font-semibold">személyes átvétellel a
-          Pápai Éléskamra</span> honlapján (átvétel minden
-          csütörtökön 16:30–18:30 között, 8500 Pápa, Budai Nagy Antal utca 1. alatt).
+          Termékeink megrendelhetőek személyes átvétellel, a <a href="#contact" className="font-semibold hover:underline">Kapcsolat</a> menüpontban megadott elérhetőségeinken. Ugyanitt van lehetőség az arra alkalmas termékek postázásával kapcsolatban is egyeztetni.
         </p>
-
-        <a
-          href="https://papaieleskamra.hu/termelok/volf-gabor-bakony-kincse-biokerteszet-815"
-          target="_blank"
-          rel="noreferrer"
-          className="mr-4 inline-flex items-center gap-2 rounded-md bg-[#6F8625] px-5 py-2.5 text-white text-sm hover:bg-[#8DC740]"
-        >
-          Tovább az oldalra
-          <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h6m0 0v6m0-6L10 16" />
-          </svg>
-        </a>
-
-        <Link to="/termekeink" className="ml-4 inline-flex items-center gap-2 rounded-md bg-gray-500 px-5 py-2.5 text-white text-sm hover:bg-gray-400">
+        <Link to="/termekeink" className="inline-flex items-center gap-2 rounded-md bg-gray-500 px-5 py-2.5 text-white text-sm hover:bg-gray-400">
           Vissza a termékekhez
         </Link>
       </div>

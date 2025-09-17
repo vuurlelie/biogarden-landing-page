@@ -29,7 +29,7 @@ export default function Items() {
         {/* belső tartalom: széleken nincs padding */}
         <div className="w-full">
           <div className="max-w-[1400px] mx-auto px-4 md:px-6">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 py-2 mx-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 px-6 py-2">
               <h1 className="text-xl font-bold tracking-wide">TERMÉKEINK</h1>
 
               {/*<label className="inline-flex items-center gap-2 text-gray-700">
