@@ -7,7 +7,7 @@ import ItemGrid from "./components/ItemGrid";
 
 export default function Items() {
   const [categoryFilter, setCategoryFilter] = useState<Category | "Összes">("Összes");
-  const [availableOnly, setAvailableOnly] = useState(false);
+  //const [availableOnly, setAvailableOnly] = useState(false);
   const [sort, setSort] = useState<"abc" | "priceup" | "pricedown">("abc");
 
   const products: Product[] = useMemo(
