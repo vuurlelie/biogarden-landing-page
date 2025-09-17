@@ -23,7 +23,7 @@ export default function Home() {
               key={i}
               src={src}
               alt={`Biogarden slide ${i + 1}`}
-              className="w-full h-[40vh] sm:h-[52vh] md:h-[60vh] lg:h-[70vh] object-cover object-center"
+              className="w-full object-cover object-center"
               loading={i > 0 ? "lazy" : "eager"}
               decoding="async"
             />
