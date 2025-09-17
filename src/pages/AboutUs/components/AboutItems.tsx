@@ -1,7 +1,7 @@
 export default function AboutGarden({ bemutatkozo }: { bemutatkozo: string }) {
   return (
     <>
-      <div className="rounded overflow-hidden">
+      <div className="rounded overflow-hidden max-w-6xl mx-auto px-4">
         <img
           className="w-full h-auto object-cover"
           src={bemutatkozo}

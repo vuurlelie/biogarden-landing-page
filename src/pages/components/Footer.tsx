@@ -26,7 +26,7 @@ export default function Footer() {
                 Kapcsolat
               </h6>
 
-              <p className="mb-3 flex items-center justify-center md:justify-start text-gray-700">
+              <p className="mb-3 flex items-center justify-start text-gray-700">
                 <span className="me-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Footer() {
                 Volf Gábor
               </p>
 
-              <p className="mb-3 flex items-start justify-center md:justify-start text-gray-700">
+              <p className="mb-3 flex items-start justify-start text-gray-700">
                 <span className="me-3 mt-0.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function Footer() {
                 </a>
               </p>
 
-              <p className="mb-6 flex items-center justify-center md:justify-start">
+              <p className="mb-6 flex items-center justify-start">
                 <span className="me-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Footer() {
 
               {/* Közösségi – a Kapcsolat alatt */}
               
-              <div className="flex items-center gap-4 justify-center md:justify-start">
+              <div className="flex items-center gap-4 justify-start">
                 {/* Facebook */}
                 <a
                   href="https://www.facebook.com/profile.php?id=100083082863561"

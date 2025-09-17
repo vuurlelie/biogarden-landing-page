@@ -18,14 +18,13 @@ export default function AboutItems({ bemutatokep }: { bemutatokep: string }) {
                 Fenntartható gazdálkodás
               </h2>
 
-              <ul className="mr-8 max-w-prose space-y-2 text-gray-600 list-disc list-inside text-justify">
+              <ul className="mr-0 lg:mr-8 max-w-prose space-y-2 text-gray-600 list-disc list-inside text-justify">
                 <li>Alapelvünk a fenntarthatóság és a biodiverzitás megőrzése.</li>
                 <li>Minden zöldséget, gyógy- és fűszernövényt magunk termesztünk a birtokon.</li>
                 <li>Kizárólag természetes növényvédelmi és növénytáplálási megoldásokat alkalmazunk – ez egyszerre óvja a környezetet és garantálja a termékeink magas minőségét.</li>
                 <li>Főbb növényeink közé tartozik a citromfű, rozmaring, fodor- és borsmenta, bazsalikom, oregánó, petrezselyem és a kakukkfű.</li> 
                 <li>A kézi szedést követően a szárítást természetes módon végezzük, majd a feldolgozás és a csomagolás is házon belül történik.</li>
                 <li>A megrendelt zöldségeket mindig frissen szedjük, szezonális kínálatunk folyamatosan bővül. Minőségükre teljes garanciát vállalunk.</li>
-                <li>A szárítmányok mellett illóolajat is előállítunk, jelenleg bérlepárlással.</li>
               </ul>
 
               <h3 className="mt-8 mb-4 text-xl md:text-2xl font-bold text-gray-700">
@@ -42,9 +41,9 @@ export default function AboutItems({ bemutatokep }: { bemutatokep: string }) {
         </div>
 
         {/* Jobb oldali kép nagy kijelzőn; mobilon felül jelenik meg automatikusan */}
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="w-full object-cover object-top sm:h-72 md:h-96 lg:h-full"
+        <div className="px-4 lg:px-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img
+          className="w-full object-cover object-top sm:h-72 md:h-96 lg:h-full"
             src={bemutatokep}
             alt="Kertészeti életkép"
             loading="lazy"

@@ -1,6 +1,6 @@
 #root {
-  min-width: fit-content;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .work-sans {
