@@ -22,10 +22,6 @@ a {
   text-decoration: inherit;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 html, body, #root {
   height: 100%;
 }
