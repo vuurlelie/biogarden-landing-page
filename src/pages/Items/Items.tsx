@@ -25,21 +25,21 @@ export default function Items() {
       <Navbar />
 
       {/* teljes szélességű „fejléc + szűrők” sáv */}
-      <section className="px-14 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-white py-6 mb-8 shadow-lg">
+      <section className="px-4 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-white py-6 mb-8 shadow-lg">
         {/* belső tartalom: széleken nincs padding */}
         <div className="w-full">
           <div className="max-w-[1400px] mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 py-2 mx-10">
               <h1 className="text-xl font-bold tracking-wide">TERMÉKEINK</h1>
 
-              <label className="inline-flex items-center gap-2 text-gray-700">
+              {/*<label className="inline-flex items-center gap-2 text-gray-700">
                 <input
                   type="checkbox"
                   checked={availableOnly}
                   onChange={(e) => setAvailableOnly(e.target.checked)}
                 />
                 Csak az elérhető termékek
-              </label>
+              </label>*/}
 
               <div className="flex flex-wrap items-center gap-4">
                 <label className="font-semibold text-gray-700">

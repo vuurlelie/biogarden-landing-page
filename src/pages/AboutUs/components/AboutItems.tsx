@@ -1,4 +1,4 @@
-export default function AboutItems({ bemutatkozo }: { bemutatkozo: string }) {
+export default function AboutGarden({ bemutatkozo }: { bemutatkozo: string }) {
   return (
     <>
       <div className="rounded overflow-hidden">
@@ -18,17 +18,18 @@ export default function AboutItems({ bemutatkozo }: { bemutatkozo: string }) {
           </h2>
 
           <p className="text-justify mb-4">
-            A Bakony Kincse Biokertészetben több mint két hektáron zöldségtermesztés mellett
-            fűszer- és gyógynövénytermesztéssel foglalkozunk. Célunk a tiszta, magas minőségű
-            élelmiszer létrehozása a hagyományos értékrenden alapuló családi gazdaságunkban,
-            ezért nem használunk műtrágyát és vegyszereket; a kártevők ellen biológiailag
-            lebomló főzeteket alkalmazunk.
+            A kis gyógynövényes gazdaságunk Győr-Moson-Sopron vármegye délkeleti csücskében, a Bakonyalja
+            legszebb természeti környezetében, Bakonyszentlászlón található.
+            A település Pápától, Győrtől és Veszprémtől egyaránt 40 km távolságra fekszik.
           </p>
           <p className="text-justify">
-            Jelenleg 15 féle növényt termesztünk és dolgozunk fel. A kézzel történő szedést
-            követően a növényeink szárítása természetes úton történik. A morzsolást is kézzel
-            végezzük, saját magunk csomagoljuk, így a teljes technológiai folyamatot zárt
-            rendszerben, a saját ellenőrzésünk alatt tarthatjuk.
+            A Bakony Kincse Biokertészet egy bio tanúsított, ökológiai szemléletű kisgazdaság, amelyet mint
+            főállású őstermelő és kistermelő 2022 elején hoztam létre. Családi kisgazdaságunkban a
+            konvencionális növénytermesztést és állattartást felváltotta a jelenlegi főtevékenységünk a
+            gyógynövénytermesztés és feldolgozás, ami teljesen új irányvonalat és kihívásokat hozott el az
+            életemben. Emellett pedig kisebb mennyiségben zöldségeket is termesztünk. Gazdaságunk alapelve
+            az ökológiai gazdálkodás, amely teljes mértékben kizárja a vegyi anyagok használatát és amelyet a
+            Biokontroll Hungária Nonprofit Kft. ellenőrzése alatt végzünk.
           </p>
         </div>
       </section>

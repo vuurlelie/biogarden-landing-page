@@ -39,7 +39,7 @@ export default function ItemGrid({ items, categoryFilter, availableOnly, sort }:
 
   return (
     <>
-      <div className="w-full px-14 pb-3 text-sm text-gray-600 mb-4">
+      <div className="w-full px-4 pb-3 text-sm text-gray-600 mb-4">
         {filteredSorted.length === 0
           ? "Nincs találat a megadott feltételekkel."
           : `${start + 1}–${Math.min(start + PAGE_SIZE, filteredSorted.length)} / összesen ${filteredSorted.length} termék`}

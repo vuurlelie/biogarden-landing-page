@@ -1,4 +1,4 @@
-export default function AboutGarden({ bemutatokep }: { bemutatokep: string }) {
+export default function AboutItems({ bemutatokep }: { bemutatokep: string }) {
   return (
     <section id="about" className="relative bg-white overflow-hidden mt-16 mb-8 shadow-lg">
       {/* max-w-6xl, hogy a behúzás egyezzen a többi tartalommal */}
@@ -15,26 +15,27 @@ export default function AboutGarden({ bemutatokep }: { bemutatokep: string }) {
           <div className="px-4 lg:px-8">
             <div className="text-left">
               <h2 className="mb-6 text-xl md:text-2xl font-bold text-gray-700">
-                Termékeinkről
+                Fenntartható gazdálkodás
               </h2>
 
-              <ul className="mr-8 max-w-prose space-y-1 text-gray-600 list-disc list-inside text-justify">
-                <li>Minden nálunk kapható zöldséget, gyógy- és fűszernövényt magunk termesztünk a birtokon.</li>
-                <li>100%-ban vegyszermentesek.</li>
-                <li>Biokontroll Hungária Kft. által tanúsított bio termékek.</li>
-                <li>A megrendelt zöldségeket átvétel előtt frissen szedjük.</li>
-                <li>Termékeink magas minőségére garanciát vállalunk.</li>
-                <li>Szezonális termékek és folyamatosan bővülő kínálat.</li>
+              <ul className="mr-8 max-w-prose space-y-2 text-gray-600 list-disc list-inside text-justify">
+                <li>Alapelvünk a fenntarthatóság és a biodiverzitás megőrzése.</li>
+                <li>Minden zöldséget, gyógy- és fűszernövényt magunk termesztünk a birtokon.</li>
+                <li>Kizárólag természetes növényvédelmi és növénytáplálási megoldásokat alkalmazunk – ez egyszerre óvja a környezetet és garantálja a termékeink magas minőségét.</li>
+                <li>Főbb növényeink közé tartozik a citromfű, rozmaring, fodor- és borsmenta, bazsalikom, oregánó, petrezselyem és a kakukkfű.</li> 
+                <li>A kézi szedést követően a szárítást természetes módon végezzük, majd a feldolgozás és a csomagolás is házon belül történik.</li>
+                <li>A megrendelt zöldségeket mindig frissen szedjük, szezonális kínálatunk folyamatosan bővül. Minőségükre teljes garanciát vállalunk.</li>
+                <li>A szárítmányok mellett illóolajat is előállítunk, jelenleg bérlepárlással.</li>
               </ul>
 
               <h3 className="mt-8 mb-4 text-xl md:text-2xl font-bold text-gray-700">
-                Termékeink nem tartalmaznak:
+                Feldolgozott termékeink nem tartalmaznak:
               </h3>
               <ul className="max-w-prose space-y-1 text-gray-600 list-disc list-inside">
                 <li>Hozzáadott sót</li>
-                <li>Adalékanyagokat</li>
+                <li>Mesterséges adalékanyagokat</li>
                 <li>Tartósítószereket</li>
-                <li>Színezőanyagokat</li>
+                <li>Színezékeket</li>
               </ul>
             </div>
           </div>

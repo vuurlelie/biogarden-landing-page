@@ -26,24 +26,25 @@ const Card = ({
 export default function ArticleGrid() {
   return (
     <section className="py-10">
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
-        <Card img={hidrolatum} title="HIDROLÁTUM">
-          Mi is az a hidrolátum? A gyógynövény lepárlási folyamat során az üstbe helyezett válogatott növényeken keresztül forró, 105-110 Celsius fokos gőzt engedünk át. 
-          Ennek hatására felszakadnak az illóolajat tartalmazó növényi részek és a gőz feltelítődik. 
-          Ezt a telített gőzt kivezetve, egy másik berendezésben lehűtjük, ami így lecsapódik, majd egy speciális edénybe kerül ahol szétválik tiszta illóolajra és illóolajat, 
-          illetve az összes komponensét tartalmazó aromavízre. Így az aromavíz - hidrolátum - egyfajta „higított változata” az illóolajnak, annak minden jótékony tulajdonságával.
-        </Card>
-        <Card img={tea} title="GYÓGYTEA">
-          A hűvös időben jól esik elfogyasztani egy csésze forró gyógynövényteát.
-          A gyógynövényekből készült teákat elsősorban a betegségek megelőzésére, enyhe lefolyású problémák, például megfázás, esetén fogyasztjuk leggyakrabban, 
-          de a kellemes aromájú és illatú, enyhe hatású gyógynövényekből készült teák a nap bármely időszakában fogyaszthatóak folyadékpótlás céljából is.
-        </Card>
+      <div className="hyphens-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
         <Card img={oil} title="ILLÓOLAJ">
-          Helyi alkalmazás: Fontos megjegyezni, hogy a legtöbb illóolaj nem alkalmazható közvetlenül, hígítás nélkül. 
-          A bőrirritáció kockázata miatt az illóolajokat hordozóolajban - bázisolajban - célszerű hígítani. 
-          Fürdőolaj - Keverjük össze az illóolajat egy hordozóolajjal és adjuk hozzá a meleg fürdővízhez. 
-          Masszázsolaj - Egy-két csepp illóolajat hozzáadhatunk bázisolajhoz vagy hidratáló krémhez, és felvihetjük bőrünkre.
+          Az illóolaj a természet legnemesebb kincse, amelyet a gondosan válogatott gyógynövényeinkből, saját gőzdesztillációs berendezéssel nyerünk ki. 
+          Egyetlen cseppje is olyan, mintha egy exkluzív spa élményét engednéd be otthonodba – kifinomult illatok, tiszta harmónia, és a luxus érzése minden lélegzetvételben.  
+          Pár cseppje elég, hogy otthonod friss, nyugtató vagy épp energizáló illatokkal teljen meg, miközben a tested-lelked is hálás lesz érte.
+          Az illóolajok sokoldalú társaid lehetnek a mindennapokban: akár párologtatóban, fürdővízben vagy masszázshoz használva is harmóniát és vitalitást hoznak az életedbe.
         </Card>
+        <Card img={hidrolatum} title="HIDROLÁTUM">
+          Mi is az a hidrolátum? A gyógynövény lepárlási folyamat során az üstbe helyezett válogatott gyógynövényeken keresztül forró gőzt engedünk át. 
+          Ennek hatására felszakadnak az illóolajat tartalmazó növényi részek és a gőz feltelítődik. Ezt a telített gőzt kivezetve, egy másik berendezésben lehűtjük, ami így lecsapódik, 
+          majd egy speciális edénybe kerül ahol szétválik tiszta illóolajra és illóolajat, illetve az összes komponensét tartalmazó aromavízre. 
+          Így az aromavíz - hidrolátum - egyfajta „higított változata” az illóolajnak, annak minden jótékony tulajdonságával.
+        </Card>
+        <Card img={tea} title="TEÁK, FŰSZEREK">
+          Gyógyteáink nemcsak felmelegítenek a hűvös napokon, hanem lágyan támogatják szervezetedet is – legyen szó megelőzésről, enyhe panaszokról vagy egyszerű kikapcsolódásról. 
+          Kellemes aromájuk és harmonikus ízviláguk miatt a mindennapok részei lehetnek, akár a reggeli induláshoz, akár egy esti nyugtató teázáshoz.
+          Fűszereink a konyha elengedhetetlen társai: frissen szárított, intenzív ízű és illatú gyógynövények, amelyek minden ételt különlegessé varázsolnak. Legyen szó egy egyszerű levesről, 
+          egy mediterrán fogásról vagy egy ünnepi vacsoráról – egy csipet belőlük a természet valódi ízét adja az ételeidhez.  
+        </Card> 
       </div>
     </section>
   );

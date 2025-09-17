@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
-import AboutGarden from "./components/AboutGarden";
-import AboutItems from "./components/AboutItems";
+import AboutGarden from "./components/AboutItems";
+import AboutItems from "./components/AboutGarden";
 
 import bemutatkozo from "../../assets/images/bemutatkozo.png";
 import bemutatokep from "../../assets/images/bemutatokep.jpg";
@@ -9,8 +9,8 @@ export default function AboutUs() {
   return (
     <>
       <Navbar />
-      <AboutItems bemutatkozo={bemutatkozo} />
-      <AboutGarden bemutatokep={bemutatokep} />
+      <AboutGarden bemutatkozo={bemutatkozo} />
+      <AboutItems bemutatokep={bemutatokep} />
     </>
   );
 }

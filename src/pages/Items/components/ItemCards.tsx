@@ -3,7 +3,7 @@ import type { Product } from "../../../types/product";
 
 export default function ItemCards({ products }: { products: Product[] }) {
   return (
-    <div className="px-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    <div className="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
       {products.map((p) => (
         <article key={p.id} className="rounded shadow-lg bg-white overflow-hidden flex flex-col">
           <Link to={`/termekeink/${p.id}`} className="relative block">
