@@ -59,7 +59,7 @@ export default function Footer() {
                 8431 Bakonyszentlászló, Jókai utca 22.
               </p>
 
-              <p className="mb-3 flex items-center justify-center md:justify-start">
+              <p className="mb-3 flex items-center justify-start">
                 <span className="me-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Footer() {
 
               {/* Közösségi – a Kapcsolat alatt */}
               
-              <div className="flex items-center gap-4 justify-start">
+              <div className="flex items-center gap-4 justify-center md:justify-start">
                 {/* Facebook */}
                 <a
                   href="https://www.facebook.com/profile.php?id=100083082863561"
