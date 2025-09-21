@@ -18,7 +18,6 @@ export default function ItemGrid({ items, categoryFilter, sort }: P) {
     let arr = items.slice();
 
     if (categoryFilter !== "Összes") arr = arr.filter(p => p.category === categoryFilter);
-    //if (availableOnly) arr = arr.filter(p => p.available);
 
     arr.sort((a, b) => {
       if (sort === "abc") return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
@@ -29,7 +28,6 @@ export default function ItemGrid({ items, categoryFilter, sort }: P) {
     return arr;
   }, [items, categoryFilter, sort]);
 
-  // reset page, ha változik a szűrés
   useEffect(() => setPage(0), [categoryFilter, sort]);
 
   const pageCount = Math.max(1, Math.ceil(filteredSorted.length / PAGE_SIZE));

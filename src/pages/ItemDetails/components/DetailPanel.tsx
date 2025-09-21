@@ -24,11 +24,14 @@ export default function DetailPanel({ product }: { product: Product }) {
         </div>
       )}
 
+      
       <div className="mt-2 pb-4 mb-4 border-b border-gray-200">
+        {/* 
         <div className="text-2xl mt-4">
           <span className="font-semibold mr-2">Ár:</span>
           {product.price.toLocaleString("hu-HU")} Ft / {product.unit}
         </div>
+         */}
         {lowStock && (
           <div className="text-sm text-red-500 mt-2">
             A termékből már csak {product.amount} {product.unit} áll rendelkezésre.
@@ -38,8 +41,8 @@ export default function DetailPanel({ product }: { product: Product }) {
           <div className="text-sm text-red-500 mt-2">A termék jelenleg nem elérhető.</div>
         )}
       </div>
+    
 
-      {/* Új rendelési tájékoztató + CTA */}
       <div className="space-y-6">
         <p className="text-gray-700 text-justify italic leading-relaxed">
           Termékeink megrendelhetőek személyes átvétellel, a <a href="#contact" className="font-semibold hover:underline">Kapcsolat</a> menüpontban megadott elérhetőségeinken. Ugyanitt van lehetőség az arra alkalmas termékek postázásával kapcsolatban is egyeztetni.

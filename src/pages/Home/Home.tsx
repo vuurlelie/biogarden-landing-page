@@ -15,7 +15,6 @@ export default function Home() {
     <>
       <Navbar />
 
-      {/* HERO carousel – full bleed */}
       <div className="w-full px-0 mt-2 sm:mt-3 shadow-lg">
         <Carousel auto interval={5000}>
           {slides.map((src, i) => (
@@ -31,12 +30,10 @@ export default function Home() {
         </Carousel>
       </div>
 
-      {/* Feature cards – KÖZÉPEN marad */}
       <div className="max-w-6xl mx-auto px-4">
         <ArticleGrid />
       </div>
 
-      {/* „Actual” banner – full bleed */}
       <div className="w-full px-0 mb-8 shadow-lg">
         <img
           className="w-full h-auto"

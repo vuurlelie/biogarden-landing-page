@@ -43,14 +43,12 @@ export default function Navbar() {
 
   return (
     <>
-      {/* progress bar */}
       <div
         id="processbar"
         className="fixed top-0 left-0 z-50 h-[3px] bg-[#6F8625]/50"
         style={{ width: `${progress}%` }}
       />
 
-      {/* FIXED NAV */}
       <nav
         id="navbar"
         className={[
@@ -62,13 +60,11 @@ export default function Navbar() {
         style={{ height: isScrolled ? "5rem" : "6rem" }}
       >
         <div className="w-full h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand */}
           <Link to="/" className="flex items-center gap-4" onClick={goTop} aria-label="Kezdőlap">
             <img src={logo} alt="Logó" className="h-14 w-auto" />
             <img src={bakonykincse} alt="Bakony Kincse Biokertészet" className="hidden xl:block h-12 w-auto" />
           </Link>
 
-          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <NavLink to="/" className={linkClass} onClick={closeMobile}>Kezdőlap</NavLink>
             <NavLink to="/bemutatkozas" className={linkClass} onClick={closeMobile}>Bemutatkozás</NavLink>
@@ -83,7 +79,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile toggle – teljesen átlátszó, semmi default háttér */}
           <button
             type="button"
             aria-label="Menü megnyitása"
@@ -100,7 +95,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile menu */}
         <div
           id="mobile-menu"
           className={`md:hidden border-t ${mobileOpen ? "block" : "hidden"} ${isScrolled ? "bg-[#FFF3EA]/95" : "bg-white"}`}
@@ -121,7 +115,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Spacer – hogy a tartalom ne csússzon a fix nav alá */}
       <div aria-hidden style={{ height: isScrolled ? "5rem" : "6rem" }} />
     </>
   );

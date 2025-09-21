@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bemutatkozas" element={<AboutUs />} />
           <Route path="/termekeink" element={<Items />} />
-          <Route path="/termekeink/:id" element={<ItemDetails />} /> {/* ← itt :id */}
+          <Route path="/termekeink/:slug" element={<ItemDetails />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

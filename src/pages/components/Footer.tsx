@@ -1,14 +1,12 @@
 export default function Footer() {
   return (
     <>
-      {/* Top area */}
       <div
         id="contact"
         className="w-full bg-black/10 flex justify-center items-center overflow-hidden pt-10 pb-10 shadow-lg"
       >
         <div className="w-full max-w-6xl px-4">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {/* Térkép (bal, 2 oszlopon) */}
             <div className="lg:col-span-2 flex items-stretch">
               <iframe
                 title="Biogarden location – Bakonyszentlászló"
@@ -20,7 +18,6 @@ export default function Footer() {
               />
             </div>
 
-            {/* Kapcsolat + Közösségi (középső oszlop) */}
             <div className="px-2">
               <h6 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
                 Kapcsolat
@@ -95,11 +92,8 @@ export default function Footer() {
                   +36 20 800 56 06
                 </a>
               </p>
-
-              {/* Közösségi – a Kapcsolat alatt */}
               
               <div className="flex items-center gap-4 justify-center md:justify-start">
-                {/* Facebook */}
                 <a
                   href="https://www.facebook.com/profile.php?id=100083082863561"
                   target="_blank"
@@ -118,7 +112,6 @@ export default function Footer() {
                   </svg>
                 </a>
 
-                {/* Instagram – klasszikus ikon */}
                 <a
                   href="https://www.instagram.com/bakony.kincse.biokerteszet/"
                   target="_blank"
@@ -132,7 +125,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Nyitvatartás (jobb oldali oszlop) */}
             <div className="px-2">
               <h6 className="mb-4 flex items-center gap-2 justify-center md:justify-start font-semibold uppercase">
                 Nyitvatartás
@@ -151,7 +143,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="mt-8 bg-gradient-to-b from-[#FFF3EA]/95 to-[#FFE8B2]/95 shadow-md p-3 text-[#6F8625] text-center overflow-hidden">
         <div>
           ©{new Date().getFullYear()} Bakony Kincse Biokertészet – Minden jog fenntartva.

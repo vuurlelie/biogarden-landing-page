@@ -20,7 +20,7 @@ export default function AboutGarden({ bemutatkozo }: { bemutatkozo: string }) {
           <p className="text-justify mb-4">
             A kis gyógynövényes gazdaságunk Győr-Moson-Sopron vármegye délkeleti csücskében, a Bakonyalja
             legszebb természeti környezetében, Bakonyszentlászlón található.
-            A település Pápától, Győrtől és Veszprémtől egyaránt 40 km távolságra fekszik.
+            A település Pápától, Győrtől és Veszprémtől egyaránt 40 km távolságra fekszik.
           </p>
           <p className="text-justify">
             A Bakony Kincse Biokertészet egy bio tanúsított, ökológiai szemléletű kisgazdaság, amelyet mint
