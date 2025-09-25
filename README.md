@@ -1,3 +1,5 @@
+[![Frontend CI](https://github.com/vuurlelie/biogarden-landing-page/actions/workflows/frontend-ci.yml/badge.svg?branch=main)](https://github.com/vuurlelie/biogarden-landing-page/actions/workflows/frontend-ci.yml)
+
 # Bakony Kincse Biokertészet – Webshop
 
 A responsive **React + TypeScript + Tailwind** based webshop frontend for *Bakony Kincse Biokertészet*.  
