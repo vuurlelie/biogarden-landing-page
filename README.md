@@ -1,9 +1,11 @@
 # Bakony Kincse Biokertészet – Webshop
 
-A modern, responsive **React + TypeScript + Tailwind** based webshop frontend for *Bakony Kincse Biokertészet*.  
+A responsive **React + TypeScript + Tailwind** based webshop frontend for *Bakony Kincse Biokertészet*.  
 The goal of the project is to showcase products, ordering information, and the farm’s philosophy, as well as to prepare for backend integration.
 
 ---
+**Live (temporary landing):** [bakonykincse.hu](https://bakonykincse.hu)  
+**Status:** Demo frontend is live; backend (ASP.NET Core Web API, EF Core, Identity, JWT) and extended frontend is in progress.
 
 ## Key Features
 
