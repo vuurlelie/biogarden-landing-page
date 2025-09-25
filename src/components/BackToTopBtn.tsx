@@ -5,8 +5,8 @@ export default function BackToTopBtn() {
 
   useEffect(() => {
     const onScroll = () => {
-      const y = window.scrollY || document.documentElement.scrollTop;
-      setIsVisible(y > 30);
+      const scrollHeight = window.scrollY || document.documentElement.scrollTop;
+      setIsVisible(scrollHeight > 30);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();

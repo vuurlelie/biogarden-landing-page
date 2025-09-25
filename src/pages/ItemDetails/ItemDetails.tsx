@@ -17,7 +17,7 @@ export default function ItemDetails() {
 
   const product: Product | undefined = useMemo(() => {
     const list = (raw as ProductRaw[]).map(normalizeProduct);
-    return list.find((p) => p.slug === slug);
+    return list.find((product) => product.slug === slug);
   }, [slug]);
 
   if (!product) {
