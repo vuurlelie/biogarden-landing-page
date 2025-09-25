@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type CarouselProps = {
   children: React.ReactNode[];
@@ -15,10 +15,13 @@ export default function Carousel({
   const [current, setCurrent] = useState(0);
   const hoverRef = useRef(false);
 
-  const previous = () =>
+  const previous = useCallback(() => {
     setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1));
-  const next = () =>
+  }, [slides.length]);
+
+  const next = useCallback(() => {
     setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1));
+  }, [slides.length]);
 
   useEffect(() => {
     if (!auto || slides.length <= 1) return;
@@ -26,7 +29,7 @@ export default function Carousel({
       if (!hoverRef.current) next();
     }, Math.max(2000, interval));
     return () => clearInterval(id);
-  }, [auto, interval, slides.length]);
+  }, [auto, next, interval, slides.length]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -35,15 +38,23 @@ export default function Carousel({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [previous, next]);
 
   const startX = useRef<number | null>(null);
+
   const onTouchStart = (e: React.TouchEvent) =>
     (startX.current = e.touches[0].clientX);
+
   const onTouchEnd = (e: React.TouchEvent) => {
     if (startX.current == null) return;
     const dx = e.changedTouches[0].clientX - startX.current;
-    if (Math.abs(dx) > 40) (dx > 0 ? previous() : next());
+    if (Math.abs(dx) > 40) {
+      if (dx > 0) {
+        previous();
+      } else {
+        next();
+      }
+    }
     startX.current = null;
   };
 

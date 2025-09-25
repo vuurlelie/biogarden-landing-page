@@ -33,7 +33,9 @@ export default function Items() {
                 Kategória:&nbsp;
                 <select
                   value={categoryFilter}
-                  onChange={(e) => setCategoryFilter(e.target.value as any)}
+                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+                    setCategoryFilter(e.target.value as Category | "Összes")
+                  }
                   className="font-normal border rounded-sm px-2 py-1"
                 >
                   {categories.map((c) => (
@@ -49,7 +51,9 @@ export default function Items() {
                 Rendezés:&nbsp;
                 <select
                   value={sort}
-                  onChange={(e) => setSort(e.target.value as any)}
+                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+                    setSort(e.target.value as "abc" | "priceup" | "pricedown")
+                  }
                   className="font-normal border rounded-sm px-2 py-1"
                 >
                   <option value="abc">ABC szerint növekvő</option>
